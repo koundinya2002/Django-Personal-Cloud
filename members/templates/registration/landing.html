@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repo</title>
+    <style>
+        /* Basic styling for the landing page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6A679E;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: whitesmoke;
+        }
+        p {
+            color: whitesmoke;
+        }
+        /* Add more styles as needed */
+
+        /* Example content for the landing page */
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+            background-color: #7875B5;
+            color: whitesmoke;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to Cloud Storage</h1>
+            <p>Securely store and access your files from anywhere.</p>
+            <p>Login to get started</p>
+            <a href="{% url 'login' %}" class="cta-button">Login</a> | <a href="{% url 'register' %}" class="cta-button">Sign-up</a>
+        </div>
+        <!-- Add more sections and content here -->
+    </div>
+</body>
+</html>
